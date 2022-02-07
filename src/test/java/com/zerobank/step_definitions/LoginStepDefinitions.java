@@ -11,6 +11,7 @@ public class LoginStepDefinitions {
     public void theUserIsLoggedIn() {
         LoginPage loginPage=new LoginPage();
         loginPage.login();
+        //comment out
 
     }
 
