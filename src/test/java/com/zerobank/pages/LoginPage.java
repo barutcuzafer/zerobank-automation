@@ -29,6 +29,18 @@ public class LoginPage extends BasePage {
         Driver.getDriver().navigate().refresh();
 
     }
+    @FindBy(id="homeMenu")
+    public WebElement home;
 
+    @FindBy(id="onlineBankingMenu")
+    public WebElement onlineBanking;
+
+    @FindBy(id="feedback")
+    public WebElement feedback;
+
+    public void clickOnOnlineBanking(){
+        onlineBanking.click();
+    }
 
 }
+

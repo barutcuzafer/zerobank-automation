@@ -11,24 +11,11 @@ public class LoginStepDefinitions {
     public void theUserIsLoggedIn() {
         LoginPage loginPage=new LoginPage();
         loginPage.login();
-        //comment out
-        //comment out2
-
+        loginPage.clickOnOnlineBanking();
 
     }
 
 
-
-
-
-    @Then("the Account Activity page should be displayed")
-    public void theAccountActivityPageShouldBeDisplayed() {
-
-    }
-
-    @And("Account drop down should have Savings selected")
-    public void accountDropDownShouldHaveSavingsSelected() {
-    }
 
 
 }
