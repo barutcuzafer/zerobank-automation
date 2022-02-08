@@ -13,12 +13,5 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(id="homeMenu")
-    protected WebElement home;
 
-    @FindBy(id="onlineBankingMenu")
-    protected WebElement onlineBanking;
-
-    @FindBy(id="feedback")
-    protected WebElement feedback;
 }
