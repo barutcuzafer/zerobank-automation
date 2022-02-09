@@ -1,6 +1,7 @@
 package com.zerobank.step_definitions;
 
 import com.zerobank.pages.LoginPage;
+import com.zerobank.pages.OnlineBanking;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,8 +14,11 @@ public class LoginStepDefinitions {
         loginPage.login();
         loginPage.clickOnOnlineBanking();
 
-    }
 
+
+
+
+    }
 
 
 
