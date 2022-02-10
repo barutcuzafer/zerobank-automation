@@ -23,8 +23,12 @@ public class Driver {
               String browser=ConfigurationReader.get("browser");
               switch (browser){
                   case "chrome":
+                      //ChromeOptions handlingSSL = new ChromeOptions();
+                      //handlingSSL.setAcceptInsecureCerts(true);
                       WebDriverManager.chromedriver().setup();
+                    //  driver=new ChromeDriver(handlingSSL);
                       driver=new ChromeDriver();
+                      //new ChromeOptions().setAcceptInsecureCerts(true).setHeadless(true));
                       break;
                   case "chrome-headless":
                       WebDriverManager.chromedriver().setup();

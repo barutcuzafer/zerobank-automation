@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
-    @FindBy(css=".icon-signin")
-    public WebElement signInButton;
-
     @FindBy(id="user_login")
     public WebElement username;
 
@@ -17,14 +14,13 @@ public class LoginPage extends BasePage {
     public WebElement password;
 
     @FindBy(css=".btn.btn-primary")
-    public WebElement getSignInButtonToSubmit;
+    public WebElement submitButton;
 
-    public void login(){
-        signInButton.click();
+    public void login(){//login with constant credentials
         username.sendKeys(ConfigurationReader.get("username"));
         password.sendKeys(ConfigurationReader.get("password"));
-        getSignInButtonToSubmit.click();
-
+        submitButton.click();
+        //Due to SSL problem making these steps
         Driver.getDriver().navigate().back();
         Driver.getDriver().navigate().refresh();
 

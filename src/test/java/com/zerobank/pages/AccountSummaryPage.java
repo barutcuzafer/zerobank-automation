@@ -20,6 +20,9 @@ public class AccountSummaryPage extends BasePage{
     @FindBy(linkText = "Loan")
     public WebElement loan;
 
+    @FindBy(linkText = "Account Activity")
+    public WebElement accountActivity;
+
 
 
     public void clickOnAccountTypes(String accountType){

@@ -12,7 +12,6 @@ public class AccountActivityDefinitionsSteps {
 
     @When("the user clicks on {string} link on the Account Summary page")
     public void theUserClicksOnLinkOnTheAccountSummaryPage(String accountType) {
-
         OnlineBanking onlineBanking=new OnlineBanking();
         onlineBanking.clickOnAccountSummary();
 
