@@ -113,4 +113,7 @@ public class FindTransactionsDefSteps {
          Assert.assertTrue(accountActivityPage.ısWithdrawalOrDepositEmpty(posit));
 
     }
+
+
+
 }

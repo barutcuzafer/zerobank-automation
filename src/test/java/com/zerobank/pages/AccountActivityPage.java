@@ -213,6 +213,12 @@ public class AccountActivityPage extends BasePage {
         return verify;
         }
 
+        @FindBy(linkText = "Pay Bills")
+         public WebElement payBills;
+        public void clickpayBills(){
+            payBills.click();
+    }
+
     }
 
 
